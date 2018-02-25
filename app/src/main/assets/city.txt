@@ -1,0 +1,1288 @@
+﻿[
+    {
+        "citys": [
+            {
+                "citysName": "广州"
+            },
+            {
+                "citysName": "深圳"
+            },
+            {
+                "citysName": "东莞"
+            },
+            {
+                "citysName": "佛山"
+            },
+            {
+                "citysName": "珠海"
+            },
+            {
+                "citysName": "中山"
+            },
+            {
+                "citysName": "汕头"
+            },
+            {
+                "citysName": "惠州"
+            },
+            {
+                "citysName": "江门"
+            },
+            {
+                "citysName": "湛江"
+            },
+            {
+                "citysName": "揭阳"
+            },
+            {
+                "citysName": "肇庆"
+            },
+            {
+                "citysName": "韶关"
+            },
+            {
+                "citysName": "茂名"
+            },
+            {
+                "citysName": "潮州"
+            },
+            {
+                "citysName": "梅州"
+            },
+            {
+                "citysName": "河源"
+            },
+            {
+                "citysName": "清远"
+            },
+            {
+                "citysName": "汕尾"
+            },
+            {
+                "citysName": "阳江"
+            },
+            {
+                "citysName": "云浮"
+            }
+        ],
+        "provinceName": "广东"
+    },
+    {
+        "citys": [],
+        "provinceName": "北京"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "南京"
+            },
+            {
+                "citysName": "苏州"
+            },
+            {
+                "citysName": "无锡"
+            },
+            {
+                "citysName": "常州"
+            },
+            {
+                "citysName": "徐州"
+            },
+            {
+                "citysName": "南通"
+            },
+            {
+                "citysName": "扬州"
+            },
+            {
+                "citysName": "盐城"
+            },
+            {
+                "citysName": "连云港"
+            },
+            {
+                "citysName": "镇江"
+            },
+            {
+                "citysName": "泰州"
+            },
+            {
+                "citysName": "淮安"
+            },
+            {
+                "citysName": "宿迁"
+            },
+            {
+                "citysName": "宜兴"
+            }
+        ],
+        "provinceName": "江苏"
+    },
+    {
+        "citys": [],
+        "provinceName": "上海"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "杭州"
+            },
+            {
+                "citysName": "温州"
+            },
+            {
+                "citysName": "宁波"
+            },
+            {
+                "citysName": "嘉兴"
+            },
+            {
+                "citysName": "台州"
+            },
+            {
+                "citysName": "金华"
+            },
+            {
+                "citysName": "绍兴"
+            },
+            {
+                "citysName": "湖州"
+            },
+            {
+                "citysName": "舟山"
+            },
+            {
+                "citysName": "丽水"
+            },
+            {
+                "citysName": "衢州"
+            }
+        ],
+        "provinceName": "浙江"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "成都"
+            },
+            {
+                "citysName": "绵阳"
+            },
+            {
+                "citysName": "南充"
+            },
+            {
+                "citysName": "德阳"
+            },
+            {
+                "citysName": "乐山"
+            },
+            {
+                "citysName": "达州"
+            },
+            {
+                "citysName": "宜宾"
+            },
+            {
+                "citysName": "泸州"
+            },
+            {
+                "citysName": "遂宁"
+            },
+            {
+                "citysName": "内江"
+            },
+            {
+                "citysName": "自贡"
+            },
+            {
+                "citysName": "广安"
+            },
+            {
+                "citysName": "眉山"
+            },
+            {
+                "citysName": "广元"
+            },
+            {
+                "citysName": "资阳"
+            },
+            {
+                "citysName": "巴中"
+            },
+            {
+                "citysName": "攀枝花"
+            },
+            {
+                "citysName": "凉山"
+            },
+            {
+                "citysName": "雅安"
+            },
+            {
+                "citysName": "阿坝"
+            },
+            {
+                "citysName": "甘孜"
+            }
+        ],
+        "provinceName": "四川"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "济南"
+            },
+            {
+                "citysName": "青岛"
+            },
+            {
+                "citysName": "烟台"
+            },
+            {
+                "citysName": "临沂"
+            },
+            {
+                "citysName": "潍坊"
+            },
+            {
+                "citysName": "济宁"
+            },
+            {
+                "citysName": "淄博"
+            },
+            {
+                "citysName": "泰安"
+            },
+            {
+                "citysName": "滨州"
+            },
+            {
+                "citysName": "德州"
+            },
+            {
+                "citysName": "威海"
+            },
+            {
+                "citysName": "聊城"
+            },
+            {
+                "citysName": "菏泽"
+            },
+            {
+                "citysName": "枣庄"
+            },
+            {
+                "citysName": "日照"
+            },
+            {
+                "citysName": "东营"
+            },
+            {
+                "citysName": "莱芜"
+            }
+        ],
+        "provinceName": "山东"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "郑州"
+            },
+            {
+                "citysName": "洛阳"
+            },
+            {
+                "citysName": "新乡"
+            },
+            {
+                "citysName": "安阳"
+            },
+            {
+                "citysName": "南阳"
+            },
+            {
+                "citysName": "信阳"
+            },
+            {
+                "citysName": "平顶山"
+            },
+            {
+                "citysName": "商丘"
+            },
+            {
+                "citysName": "许昌"
+            },
+            {
+                "citysName": "焦作"
+            },
+            {
+                "citysName": "开封"
+            },
+            {
+                "citysName": "周口"
+            },
+            {
+                "citysName": "濮阳"
+            },
+            {
+                "citysName": "驻马店"
+            },
+            {
+                "citysName": "漯河"
+            },
+            {
+                "citysName": "三门峡"
+            },
+            {
+                "citysName": "鹤壁"
+            },
+            {
+                "citysName": "济源"
+            }
+        ],
+        "provinceName": "河南"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "武汉"
+            },
+            {
+                "citysName": "宜昌"
+            },
+            {
+                "citysName": "襄阳"
+            },
+            {
+                "citysName": "荆州"
+            },
+            {
+                "citysName": "十堰"
+            },
+            {
+                "citysName": "黄石"
+            },
+            {
+                "citysName": "黄冈"
+            },
+            {
+                "citysName": "孝感"
+            },
+            {
+                "citysName": "恩施"
+            },
+            {
+                "citysName": "咸宁"
+            },
+            {
+                "citysName": "荆门"
+            },
+            {
+                "citysName": "鄂州"
+            },
+            {
+                "citysName": "随州"
+            },
+            {
+                "citysName": "仙桃"
+            },
+            {
+                "citysName": "天门"
+            },
+            {
+                "citysName": "潜江"
+            },
+            {
+                "citysName": "神农架林区"
+            }
+        ],
+        "provinceName": "湖北"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "长沙"
+            },
+            {
+                "citysName": "衡阳"
+            },
+            {
+                "citysName": "株洲"
+            },
+            {
+                "citysName": "邵阳"
+            },
+            {
+                "citysName": "郴州"
+            },
+            {
+                "citysName": "湘潭"
+            },
+            {
+                "citysName": "岳阳"
+            },
+            {
+                "citysName": "常德"
+            },
+            {
+                "citysName": "怀化"
+            },
+            {
+                "citysName": "娄底"
+            },
+            {
+                "citysName": "益阳"
+            },
+            {
+                "citysName": "永州"
+            },
+            {
+                "citysName": "张家界"
+            },
+            {
+                "citysName": "湘西"
+            }
+        ],
+        "provinceName": "湖南"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "福州"
+            },
+            {
+                "citysName": "厦门"
+            },
+            {
+                "citysName": "泉州"
+            },
+            {
+                "citysName": "漳州"
+            },
+            {
+                "citysName": "莆田"
+            },
+            {
+                "citysName": "三明"
+            },
+            {
+                "citysName": "宁德"
+            },
+            {
+                "citysName": "南平"
+            },
+            {
+                "citysName": "龙岩"
+            }
+        ],
+        "provinceName": "福建"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "西安"
+            },
+            {
+                "citysName": "汉中"
+            },
+            {
+                "citysName": "咸阳"
+            },
+            {
+                "citysName": "渭南"
+            },
+            {
+                "citysName": "宝鸡"
+            },
+            {
+                "citysName": "榆林"
+            },
+            {
+                "citysName": "延安"
+            },
+            {
+                "citysName": "安康"
+            },
+            {
+                "citysName": "商洛"
+            },
+            {
+                "citysName": "铜川"
+            }
+        ],
+        "provinceName": "陕西"
+    },
+    {
+        "citys": [],
+        "provinceName": "重庆"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "沈阳"
+            },
+            {
+                "citysName": "大连"
+            },
+            {
+                "citysName": "鞍山"
+            },
+            {
+                "citysName": "锦州"
+            },
+            {
+                "citysName": "抚顺"
+            },
+            {
+                "citysName": "丹东"
+            },
+            {
+                "citysName": "朝阳"
+            },
+            {
+                "citysName": "营口"
+            },
+            {
+                "citysName": "盘锦"
+            },
+            {
+                "citysName": "葫芦岛"
+            },
+            {
+                "citysName": "辽阳"
+            },
+            {
+                "citysName": "铁岭"
+            },
+            {
+                "citysName": "本溪"
+            },
+            {
+                "citysName": "阜新"
+            }
+        ],
+        "provinceName": "辽宁"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "石家庄"
+            },
+            {
+                "citysName": "保定"
+            },
+            {
+                "citysName": "唐山"
+            },
+            {
+                "citysName": "邯郸"
+            },
+            {
+                "citysName": "秦皇岛"
+            },
+            {
+                "citysName": "邢台"
+            },
+            {
+                "citysName": "沧州"
+            },
+            {
+                "citysName": "廊坊"
+            },
+            {
+                "citysName": "张家口"
+            },
+            {
+                "citysName": "衡水"
+            },
+            {
+                "citysName": "承德"
+            }
+        ],
+        "provinceName": "河北"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "合肥"
+            },
+            {
+                "citysName": "芜湖"
+            },
+            {
+                "citysName": "阜阳"
+            },
+            {
+                "citysName": "安庆"
+            },
+            {
+                "citysName": "蚌埠"
+            },
+            {
+                "citysName": "六安"
+            },
+            {
+                "citysName": "淮南"
+            },
+            {
+                "citysName": "马鞍山"
+            },
+            {
+                "citysName": "滁州"
+            },
+            {
+                "citysName": "宿州"
+            },
+            {
+                "citysName": "宣城"
+            },
+            {
+                "citysName": "淮北"
+            },
+            {
+                "citysName": "亳州"
+            },
+            {
+                "citysName": "黄山"
+            },
+            {
+                "citysName": "铜陵"
+            },
+            {
+                "citysName": "池州"
+            },
+            {
+                "citysName": "巢湖"
+            }
+        ],
+        "provinceName": "安徽"
+    },
+    {
+        "citys": [],
+        "provinceName": "天津"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "哈尔滨"
+            },
+            {
+                "citysName": "大庆"
+            },
+            {
+                "citysName": "齐齐哈尔"
+            },
+            {
+                "citysName": "牡丹江"
+            },
+            {
+                "citysName": "佳木斯"
+            },
+            {
+                "citysName": "绥化"
+            },
+            {
+                "citysName": "鸡西"
+            },
+            {
+                "citysName": "双鸭山"
+            },
+            {
+                "citysName": "黑河"
+            },
+            {
+                "citysName": "鹤岗"
+            },
+            {
+                "citysName": "伊春"
+            },
+            {
+                "citysName": "七台河"
+            },
+            {
+                "citysName": "大兴安岭"
+            }
+        ],
+        "provinceName": "黑龙江"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "南昌"
+            },
+            {
+                "citysName": "赣州"
+            },
+            {
+                "citysName": "九江"
+            },
+            {
+                "citysName": "上饶"
+            },
+            {
+                "citysName": "吉安"
+            },
+            {
+                "citysName": "抚州"
+            },
+            {
+                "citysName": "宜春"
+            },
+            {
+                "citysName": "景德镇"
+            },
+            {
+                "citysName": "萍乡"
+            },
+            {
+                "citysName": "新余"
+            },
+            {
+                "citysName": "鹰潭"
+            }
+        ],
+        "provinceName": "江西"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "南宁"
+            },
+            {
+                "citysName": "桂林"
+            },
+            {
+                "citysName": "柳州"
+            },
+            {
+                "citysName": "玉林"
+            },
+            {
+                "citysName": "北海"
+            },
+            {
+                "citysName": "梧州"
+            },
+            {
+                "citysName": "贵港"
+            },
+            {
+                "citysName": "钦州"
+            },
+            {
+                "citysName": "百色"
+            },
+            {
+                "citysName": "河池"
+            },
+            {
+                "citysName": "贺州"
+            },
+            {
+                "citysName": "防城港"
+            },
+            {
+                "citysName": "来宾"
+            },
+            {
+                "citysName": "崇左"
+            }
+        ],
+        "provinceName": "广西"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "长春"
+            },
+            {
+                "citysName": "吉林"
+            },
+            {
+                "citysName": "四平"
+            },
+            {
+                "citysName": "延边"
+            },
+            {
+                "citysName": "松原"
+            },
+            {
+                "citysName": "通化"
+            },
+            {
+                "citysName": "白城"
+            },
+            {
+                "citysName": "白山"
+            },
+            {
+                "citysName": "辽源"
+            }
+        ],
+        "provinceName": "吉林"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "太原"
+            },
+            {
+                "citysName": "临汾"
+            },
+            {
+                "citysName": "运城"
+            },
+            {
+                "citysName": "晋中"
+            },
+            {
+                "citysName": "大同"
+            },
+            {
+                "citysName": "长治"
+            },
+            {
+                "citysName": "吕梁"
+            },
+            {
+                "citysName": "晋城"
+            },
+            {
+                "citysName": "忻州"
+            },
+            {
+                "citysName": "阳泉"
+            },
+            {
+                "citysName": "朔州"
+            }
+        ],
+        "provinceName": "山西"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "昆明"
+            },
+            {
+                "citysName": "大理"
+            },
+            {
+                "citysName": "曲靖"
+            },
+            {
+                "citysName": "玉溪"
+            },
+            {
+                "citysName": "红河"
+            },
+            {
+                "citysName": "丽江"
+            },
+            {
+                "citysName": "昭通"
+            },
+            {
+                "citysName": "德宏"
+            },
+            {
+                "citysName": "文山"
+            },
+            {
+                "citysName": "西双版纳"
+            },
+            {
+                "citysName": "保山"
+            },
+            {
+                "citysName": "楚雄"
+            },
+            {
+                "citysName": "普洱"
+            },
+            {
+                "citysName": "临沧"
+            },
+            {
+                "citysName": "迪庆"
+            },
+            {
+                "citysName": "怒江"
+            }
+        ],
+        "provinceName": "云南"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "贵阳"
+            },
+            {
+                "citysName": "遵义"
+            },
+            {
+                "citysName": "黔东南"
+            },
+            {
+                "citysName": "安顺"
+            },
+            {
+                "citysName": "六盘水"
+            },
+            {
+                "citysName": "毕节"
+            },
+            {
+                "citysName": "黔南"
+            },
+            {
+                "citysName": "铜仁"
+            },
+            {
+                "citysName": "黔西南"
+            }
+        ],
+        "provinceName": "贵州"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "呼和浩特"
+            },
+            {
+                "citysName": "包头"
+            },
+            {
+                "citysName": "赤峰"
+            },
+            {
+                "citysName": "呼伦贝尔"
+            },
+            {
+                "citysName": "鄂尔多斯"
+            },
+            {
+                "citysName": "通辽"
+            },
+            {
+                "citysName": "巴彦淖尔"
+            },
+            {
+                "citysName": "锡林郭勒"
+            },
+            {
+                "citysName": "兴安盟"
+            },
+            {
+                "citysName": "乌兰察布"
+            },
+            {
+                "citysName": "乌海"
+            },
+            {
+                "citysName": "阿拉善盟"
+            }
+        ],
+        "provinceName": "内蒙古"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "乌鲁木齐"
+            },
+            {
+                "citysName": "伊犁"
+            },
+            {
+                "citysName": "喀什"
+            },
+            {
+                "citysName": "巴音郭楞"
+            },
+            {
+                "citysName": "石河子"
+            },
+            {
+                "citysName": "昌吉"
+            },
+            {
+                "citysName": "克拉玛依"
+            },
+            {
+                "citysName": "阿克苏"
+            },
+            {
+                "citysName": "哈密"
+            },
+            {
+                "citysName": "阿勒泰"
+            },
+            {
+                "citysName": "博尔塔拉"
+            },
+            {
+                "citysName": "塔城"
+            },
+            {
+                "citysName": "吐鲁番"
+            },
+            {
+                "citysName": "和田"
+            },
+            {
+                "citysName": "克孜勒苏"
+            },
+            {
+                "citysName": "阿拉尔"
+            },
+            {
+                "citysName": "图木舒克"
+            },
+            {
+                "citysName": "五家渠"
+            }
+        ],
+        "provinceName": "新疆"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "兰州"
+            },
+            {
+                "citysName": "天水"
+            },
+            {
+                "citysName": "酒泉"
+            },
+            {
+                "citysName": "庆阳"
+            },
+            {
+                "citysName": "白银"
+            },
+            {
+                "citysName": "平凉"
+            },
+            {
+                "citysName": "张掖"
+            },
+            {
+                "citysName": "武威"
+            },
+            {
+                "citysName": "定西"
+            },
+            {
+                "citysName": "陇南"
+            },
+            {
+                "citysName": "嘉峪关"
+            },
+            {
+                "citysName": "金昌"
+            },
+            {
+                "citysName": "临夏"
+            },
+            {
+                "citysName": "甘南"
+            }
+        ],
+        "provinceName": "甘肃"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "海口"
+            },
+            {
+                "citysName": "三亚"
+            },
+            {
+                "citysName": "儋州"
+            },
+            {
+                "citysName": "琼海"
+            },
+            {
+                "citysName": "文昌"
+            },
+            {
+                "citysName": "保亭"
+            },
+            {
+                "citysName": "三沙"
+            },
+            {
+                "citysName": "东方"
+            },
+            {
+                "citysName": "陵水"
+            },
+            {
+                "citysName": "澄迈"
+            },
+            {
+                "citysName": "乐东"
+            },
+            {
+                "citysName": "昌江"
+            },
+            {
+                "citysName": "五指山"
+            },
+            {
+                "citysName": "临高"
+            },
+            {
+                "citysName": "白沙"
+            },
+            {
+                "citysName": "定安"
+            },
+            {
+                "citysName": "屯昌"
+            },
+            {
+                "citysName": "琼中"
+            }
+        ],
+        "provinceName": "海南"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "银川"
+            },
+            {
+                "citysName": "石嘴山"
+            },
+            {
+                "citysName": "吴忠"
+            },
+            {
+                "citysName": "中卫"
+            },
+            {
+                "citysName": "固原"
+            }
+        ],
+        "provinceName": "宁夏"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "西宁"
+            },
+            {
+                "citysName": "海南"
+            },
+            {
+                "citysName": "海西"
+            },
+            {
+                "citysName": "海东"
+            },
+            {
+                "citysName": "玉树"
+            },
+            {
+                "citysName": "海北"
+            },
+            {
+                "citysName": "果洛"
+            },
+            {
+                "citysName": "黄南"
+            }
+        ],
+        "provinceName": "青海"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "拉萨"
+            },
+            {
+                "citysName": "日喀则"
+            },
+            {
+                "citysName": "林芝"
+            },
+            {
+                "citysName": "阿里"
+            },
+            {
+                "citysName": "山南"
+            },
+            {
+                "citysName": "昌都"
+            },
+            {
+                "citysName": "那曲"
+            }
+        ],
+        "provinceName": "西藏"
+    },
+    {
+        "citys": [],
+        "provinceName": "香港"
+    },
+    {
+        "citys": [
+            {
+                "citysName": "台北"
+            },
+            {
+                "citysName": "台中"
+            },
+            {
+                "citysName": "高雄"
+            },
+            {
+                "citysName": "宜兰县"
+            },
+            {
+                "citysName": "新北"
+            },
+            {
+                "citysName": "台南"
+            },
+            {
+                "citysName": "桃园县"
+            },
+            {
+                "citysName": "新竹"
+            },
+            {
+                "citysName": "彰化县"
+            },
+            {
+                "citysName": "嘉義"
+            },
+            {
+                "citysName": "屏東"
+            },
+            {
+                "citysName": "花莲县"
+            },
+            {
+                "citysName": "基隆"
+            },
+            {
+                "citysName": "云林县"
+            },
+            {
+                "citysName": "台东"
+            }
+        ],
+        "provinceName": "台湾"
+    },
+    {
+        "citys": [],
+        "provinceName": "澳门"
+    }
+]

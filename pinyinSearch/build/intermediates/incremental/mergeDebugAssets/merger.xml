@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="F:\my_projects\DouDou\pinyinSearch\src\main\assets"/><source path="F:\my_projects\DouDou\pinyinSearch\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="F:\my_projects\DouDou\pinyinSearch\src\debug\assets"/></dataSet></merger>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:tool="http://schemas.android.com/tools"
+              android:background="@color/light_black"
+              android:orientation="vertical"
+              android:paddingLeft="8dp"
+              android:paddingRight="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/ic_admire_success_des"/>
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_action_overflow_white"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                tool:text="毕业生谈一谈无问西东里面的一些冷门知识。"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                tool:text="晚上看完了《无问西东》，心情便不能平静，回家看看豆瓣的影评，毁誉参半。高的捧上天，奉为神作；低的贬下地，恨不得踩上一万只脚。而我，作为普通毕业生，只想给大家补充一些知识，希望能够帮助大家更好地理解这部电影。"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"></View>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="90dp"
+            android:layout_height="127dp"
+            tool:src="@mipmap/moon"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="3dp">
+
+        <ImageView
+            android:id="@+id/iv_author"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="4dp"
+            tool:src="@mipmap/author"/>
+
+        <TextView
+            android:id="@+id/tv_who"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            tool:text="陈老师要将三点 评论大话西游之大圣娶妻"/>
+    </LinearLayout>
+</LinearLayout>

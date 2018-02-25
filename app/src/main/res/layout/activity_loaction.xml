@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:navigationIcon="@mipmap/ic_bar_back_green"
+            app:title="选择城市"
+            app:titleTextAppearance="@style/toolbarTextStyle"
+            ></android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tl_location"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            app:tabIndicatorColor="@color/light_green"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/light_green"
+            app:tabTextAppearance="@style/tabLayoutTextStyle2"
+            app:tabTextColor="@color/bottom_text">
+
+        </android.support.design.widget.TabLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp">
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="7dp"
+            android:src="@mipmap/ic_search_gray"/>
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:hint="输入城市名称查询"
+            android:textColor="@color/light_white"
+            android:textCursorDrawable="@drawable/drawable_cursor_location"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/translucent_dark_gray"
+            android:visibility="invisible"></android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:paddingTop="8dp"
+            android:text="这里是空哒~"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            tools:visibility="visible"/>
+    </FrameLayout>
+</LinearLayout>

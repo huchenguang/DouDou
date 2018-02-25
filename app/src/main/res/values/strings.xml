@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">DouDou</string>
+    <array name="tb_hot">
+        <item>正在热映</item>
+        <item>即将热映</item>
+    </array>
+    <array name="tb_location">
+        <item>国内</item>
+        <item>海外</item>
+    </array>
+    <array name="tb_find">
+        <item>电影</item>
+        <item>电视</item>
+    </array>
+    <string name="movie_director">导演：%1$s</string>
+    <string name="movie_actor">主演：%1$s / %2$s / %3$s</string>
+
+    <array name="hot_cities">
+        <item>北京</item>
+        <item>上海</item>
+        <item>广州</item>
+        <item>深圳</item>
+        <item>成都</item>
+        <item>武汉</item>
+        <item>杭州</item>
+        <item>重庆</item>
+        <item>郑州</item>
+        <item>南京</item>
+        <item>西安</item>
+        <item>苏州</item>
+        <item>天津</item>
+        <item>长沙</item>
+        <item>福州</item>
+    </array>
+</resources>

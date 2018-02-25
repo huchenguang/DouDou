@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="13dp"
+    android:paddingRight="13dp">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="90dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="15dp"
+        tool:src="@mipmap/moon"/>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_weight="1"
+        android:padding="4dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tool:text="明月几时有"/>
+
+        <TextView
+            android:id="@+id/tv_director"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textSize="12sp"
+            tool:text="导演：维斯·鲍尔"/>
+
+        <TextView
+            android:id="@+id/tv_actors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_director"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textSize="12sp"
+            tool:text="主演：迪伦·奥布莱恩 / 卡呀·斯考达里奥 / 李绮红"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:gravity="center"
+            android:textColor="@color/text_yellow"
+            android:textSize="13sp"
+            tool:text="1.3万人想看"/>
+
+        <TextView
+            android:id="@+id/tv_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/selector_scan"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="6dp"
+            android:textColor="@drawable/selector_yellow_text"
+            android:textSize="14sp"
+            tool:text="想看"/>
+    </LinearLayout>
+</LinearLayout>

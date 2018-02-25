@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <RadioGroup
+            android:id="@+id/rg_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:button="@null"
+                android:checked="true"
+                android:text="全部"
+                android:textColor="@drawable/nav_bottom_text_color"/>
+
+            <RadioButton
+                android:id="@+id/rb_jan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:button="@null"
+                android:text="2月"
+                android:textColor="@drawable/nav_bottom_text_color"/>
+
+            <RadioButton
+                android:id="@+id/rb_feb"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:button="@null"
+                android:text="3月"
+                android:textColor="@drawable/nav_bottom_text_color"/>
+
+            <RadioButton
+                android:id="@+id/rb_mar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:button="@null"
+                android:text="4月"
+                android:textColor="@drawable/nav_bottom_text_color"/>
+        </RadioGroup>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="12dp"
+            android:background="@color/bottom_text"></View>
+
+        <RadioGroup
+            android:id="@+id/rg_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:text="时间"
+                android:textColor="@drawable/nav_bottom_text_color"/>
+
+            <RadioButton
+                android:id="@+id/rb_heat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="热度"
+                android:textColor="@drawable/nav_bottom_text_color"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_will"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"></android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

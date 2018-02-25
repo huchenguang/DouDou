@@ -1,0 +1,47 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:1:1-18:12
+INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:1:1-18:12
+INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:1:1-18:12
+INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:1:1-18:12
+INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:1:1-18:12
+INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:1:1-18:12
+INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:1:1-18:12
+	package
+		ADDED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:3:11-37
+		INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml
+		INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:5:11-36
+		INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml
+		INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:2:11-57
+	xmlns:android
+		ADDED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:1:11-69
+	android:versionCode
+		ADDED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:4:11-34
+		INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml
+		INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml
+uses-sdk
+ADDED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:7:5-9:41
+	android:targetSdkVersion
+		ADDED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml
+		INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:8:9-35
+		INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml
+		INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml
+application
+ADDED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:11:5-16:19
+	android:label
+		ADDED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:13:9-41
+	android:allowBackup
+		ADDED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:12:9-35
+	android:theme
+		ADDED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:14:9-40

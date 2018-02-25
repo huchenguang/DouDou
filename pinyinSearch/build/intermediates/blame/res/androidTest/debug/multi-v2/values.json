@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "F:\\my_projects\\DouDou\\pinyinSearch\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "F:\\my_projects\\DouDou\\pinyinSearch\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,10",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,105,396",
+                        "endLines": "2,9,12",
+                        "endColumns": "49,12,12",
+                        "endOffsets": "100,391,551"
+                    }
+                }
+            ]
+        }
+    ]
+}

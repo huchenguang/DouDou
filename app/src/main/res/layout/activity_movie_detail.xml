@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+
+    <android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/layout_movie_detail_info"></include>
+
+            <TextView
+                android:id="@+id/tv_actor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="30dp"
+                android:text="影人"
+                android:textColor="@color/bottom_text"
+                android:textSize="13sp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_actor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"></android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/tv_photos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/bottom_text"
+                android:textSize="13sp"
+                tool:text="预告片/剧照"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_photos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"></android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/tv_award"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="30dp"
+                android:text="获奖记录"
+                android:textColor="@color/bottom_text"
+                android:textSize="13sp"/>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tl_comment"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                app:tabIndicatorColor="#9e9e9e"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="#9b9b9b"
+                app:tabTextAppearance="@style/tabLayoutTextStyle"
+                app:tabTextColor="#4c4b4c">
+            </android.support.design.widget.TabLayout>
+
+            <com.example.chenguang.doudou.widget.NoScrollViewPager
+                android:id="@+id/vp_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.example.chenguang.doudou.widget.NoScrollViewPager>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <include
+        layout="@layout/layout_movie_detail_title"></include>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_comment2"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_below="@+id/ll_title"
+        android:visibility="invisible"
+        app:tabIndicatorColor="#9e9e9e"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#9b9b9b"
+        app:tabTextAppearance="@style/tabLayoutTextStyle"
+        app:tabTextColor="#4c4b4c"></android.support.design.widget.TabLayout>
+</RelativeLayout>

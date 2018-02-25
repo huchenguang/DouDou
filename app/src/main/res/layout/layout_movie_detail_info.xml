@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:tool="http://schemas.android.com/tools"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_cover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/iv_cover"
+            tool:src="@mipmap/moon"
+            android:layout_width="wrap_content"
+            android:layout_height="204dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="75dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_movie_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="13dp">
+
+        <LinearLayout
+            android:id="@+id/ll_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                tool:text="明月几时有"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="19dp"/>
+
+            <TextView
+                android:id="@+id/tv_type"
+                style="@style/smallTextStyle"
+                tool:text="2017 / 剧情 / 历史 / 战争"
+                android:layout_marginTop="13dp"/>
+
+            <TextView
+                android:id="@+id/tv_pub_time"
+                style="@style/smallTextStyle"
+                tool:text="上映时间：2017-07-01"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:id="@+id/tv_duration"
+                style="@style/smallTextStyle"
+                tool:text="片长：130分钟"
+                android:layout_marginTop="2dp"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="3dp">
+
+            <TextView
+                style="@style/smallTextStyle"
+                android:text="豆瓣评分"/>
+
+            <TextView
+                android:id="@+id/tv_rate"
+                style="@style/smallTextStyle"
+                tool:text="7.0"
+                android:textColor="@color/black"
+                android:textSize="19sp"/>
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                style="@style/starStyle"
+                tool:rating="4.3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:paddingTop="2dp"/>
+
+            <TextView
+                android:id="@+id/tv_rating_num"
+                style="@style/smallTextStyle"
+                tool:text="50545人"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_judge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_want_to_see"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/selector_scan"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="想看"
+            android:textColor="@drawable/selector_yellow_text"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5"
+            android:background="@drawable/selector_scan"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="看过"
+                android:textColor="@drawable/selector_yellow_text"
+                android:textSize="15sp"/>
+
+            <RatingBar
+                style="@style/starStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:paddingTop="2dp"
+                android:rating="0"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="30dp"
+        android:maxLines="4"
+        android:text="简介"
+        android:textColor="@color/bottom_text"
+        android:textSize="13sp"/>
+
+    <com.example.chenguang.doudou.widget.ExpandTextView
+        android:id="@+id/tv_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/bottom_text_press"
+        android:textSize="14sp"/>
+</LinearLayout>

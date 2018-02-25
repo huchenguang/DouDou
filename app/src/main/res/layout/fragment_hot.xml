@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableRight="@mipmap/ic_arrow_gray_down"
+            android:gravity="center"
+            android:text="北京"
+            android:textColor="@color/bottom_text_press"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_title_search"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_search_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="电影 / 电视剧 / 影人"
+                android:textColor="@color/bottom_text"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tl_hot"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            app:tabIndicatorColor="@color/black"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/black"
+            app:tabTextAppearance="@style/tabLayoutTextStyle"
+            app:tabTextColor="@color/bottom_text">
+
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+
+</LinearLayout>

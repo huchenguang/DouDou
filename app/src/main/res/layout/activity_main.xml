@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.example.chenguang.doudou.widget.NoScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </com.example.chenguang.doudou.widget.NoScrollViewPager>
+
+    <RadioGroup
+        android:id="@+id/rb_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp">
+
+        <RadioButton
+            android:id="@+id/rb_hot"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/nav_bottom_hot_bg"
+            android:text="热映"/>
+
+        <RadioButton
+            android:id="@+id/rb_find"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/nav_bottom_find_bg"
+            android:text="找片"/>
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/nav_bottom_mine_bg"
+            android:text="我的"/>
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pinyinsearch.test" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="26" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:functionalTest="false"
+        android:handleProfiling="false"
+        android:label="Tests for com.pinyinsearch.test"
+        android:targetPackage="com.pinyinsearch.test" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="android.test.runner" />
+    </application>
+
+</manifest>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="8dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="豆瓣 Top250"
+        android:textColor="#5f5f5f"
+        android:textSize="18sp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        ></android.support.v4.view.ViewPager>
+
+    <TextView
+        android:id="@+id/tv_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#5f5f5f"
+        android:text="全部250部"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="你可能感兴趣"
+        android:textColor="#5f5f5f"
+        android:textSize="18sp"/>
+
+</LinearLayout>

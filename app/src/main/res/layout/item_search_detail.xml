@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="horizontal"
+              android:paddingBottom="15dp"
+              android:paddingLeft="13dp"
+              android:paddingTop="15dp">
+
+    <ImageView
+        android:id="@+id/iv_poster"
+        android:layout_width="50dp"
+        android:layout_height="71dp"
+        tools:src="@mipmap/moon"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="2dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="明月几时有"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                style="@style/starStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:paddingTop="2dp"
+                android:rating="4.3"
+                />
+
+            <TextView
+                android:id="@+id/tv_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="8.7"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_director"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_rate"
+            android:text="导演：许按华"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_actor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_director"
+            android:text="主演：霍建华 / 彭于晏 / 周迅"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+</LinearLayout>

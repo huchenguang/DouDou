@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.example.chenguang.doudou"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    testOptions { // <-- You need this
+        unitTests {
+            returnDefaultValues = true
+        }
+        sourceSets {
+            main {
+                jniLibs.srcDir 'libs'
+                jni.srcDirs = []
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation files('libs/BaiduLBS_Android.jar')
+    testCompile 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    //butterKnife
+    compile 'com.jakewharton:butterknife:8.6.0'
+    compile 'com.jakewharton:butterknife-compiler:8.6.0'
+    //dagger2
+    compile 'com.google.dagger:dagger:2.4'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.4'
+    //java注解
+    compile 'org.glassfish:javax.annotation:10.0-b28'
+    //Rxjava
+    compile 'io.reactivex.rxjava2:rxjava:2.0.1'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.9.1'
+    //factory
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
+    compile 'com.squareup.retrofit2:converter-scalars:2.0.0-beta4'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+    //gson
+    compile 'com.google.code.gson:gson:2.8.2'
+    //adapter
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34'
+    implementation project(':pinyinSearch')
+    //glide
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //jsoup
+    compile 'org.jsoup:jsoup:1.11.2'
+    //工具包
+    compile 'com.blankj:utilcode:1.6.3'
+    //下拉刷新
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-7'
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.4-7'
+    compile 'com.alibaba:fastjson:1.2.44'
+}

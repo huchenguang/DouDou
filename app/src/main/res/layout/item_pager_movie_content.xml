@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="8dp"
+    android:paddingTop="4dp">
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingRight="6dp"
+        android:text="1"
+        android:textColor="#5f5f5f"/>
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="45dp"
+        android:layout_height="64dp"
+        tool:src="@mipmap/moon"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="6dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="3dp"
+            android:textColor="#535353"
+            android:textSize="14sp"
+            tool:text="三块广告牌"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                style="@style/starStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:paddingTop="2dp"
+                tool:rating="4.3"
+                />
+
+            <TextView
+                android:id="@+id/tv_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:textSize="12dp"
+                tool:text="8.7"/>
+
+            <TextView
+                android:id="@+id/tv_rate_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:textSize="12dp"
+                tool:text="34708人评价"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/arrow_up"
+            android:visibility="invisible"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#f3f3f3"></View>
+    </RelativeLayout>
+</LinearLayout>

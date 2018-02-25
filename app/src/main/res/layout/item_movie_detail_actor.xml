@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="95dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingRight="12dp">
+
+    <ImageView
+        android:id="@+id/iv_actor"
+        android:layout_width="95dp"
+        android:layout_height="134dp"
+        tool:src="@mipmap/moon"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:maxEms="8"
+        android:maxLines="1"
+        android:textColor="@color/bottom_text_press"
+        android:textSize="14sp"
+        tool:text="吉尔莫·德尔托罗"/>
+
+    <TextView
+        android:id="@+id/tv_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/bottom_text"
+        android:textSize="12sp"
+        tool:text="导演"/>
+</LinearLayout>
