@@ -1,7 +1,10 @@
 package com.example.chenguang.doudou;
 
+import com.example.chenguang.doudou.api.DouBanApi;
+import com.example.chenguang.doudou.bean.HotMovie;
 import com.example.chenguang.doudou.bean.Province;
 import com.example.chenguang.doudou.provider.manager.MovieWillPlayingManager;
+import com.example.chenguang.doudou.utils.ConstantValues;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -24,16 +27,15 @@ import java.util.List;
 public class NetWorkTest {
     @Test
     public void test() {
-       /* DouBanApi.getInstance(ConstantValues.BASE_API_2, DouBanApi
-                .getDefaultClient())
-                .getHotMovies(0, 10)
-                .subscribe(new Consumer<HotMovie>() {
-                    @Override
-                    public void accept(HotMovie hotMovie) throws Exception {
-                        System.out.println(hotMovie.subjects.toString());
-                    }
-                });*/
+        DouBanApi mApi = DouBanApi.getInstance(ConstantValues.BASE_API_2, DouBanApi
+                .getDefaultClient());
 
+        try {
+            HotMovie hotMovies = mApi.getHotMovies(0, 20);
+            System.out.println(hotMovies.subjects.toString());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Test

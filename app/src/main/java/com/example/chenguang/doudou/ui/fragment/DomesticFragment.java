@@ -91,6 +91,7 @@ public class DomesticFragment extends BaseFragment implements LocationFragmentCo
                     SelectionActivity.startActivity(mActivity, myCitys);
                     return;
                 }
+                //返回数据给上一个activity
                 Intent intent = new Intent();
                 intent.putExtra("address", address);
                 mActivity.setResult(1, intent);
