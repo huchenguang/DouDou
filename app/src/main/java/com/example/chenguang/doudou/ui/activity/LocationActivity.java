@@ -1,5 +1,6 @@
 package com.example.chenguang.doudou.ui.activity;
 
+import android.animation.ValueAnimator;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -102,6 +103,7 @@ public class LocationActivity extends BaseActivity implements View
 
         et_search.setOnClickListener(this);
         iv_search.setOnClickListener(this);
+        recycler_view.setOnClickListener(this);
         et_search.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -152,21 +154,10 @@ public class LocationActivity extends BaseActivity implements View
     }
 
     @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
-
-    @Override
     public void onBackPressed() {
-        System.out.println("ll_root:" + ll_root.getTranslationY());
-        if (ll_root.getTranslationY() != 0) {
-            ll_root.animate().translationY(0);
-            recycler_view.setVisibility(View.GONE);
-            if (mAddressAdapter != null) {
-                mAddressAdapter.clearAll();
-            }
-            tv_empty.setVisibility(View.INVISIBLE);
-            view_pager.setVisibility(View.VISIBLE);
+        if (((LinearLayout.LayoutParams) ll_top.getLayoutParams()).topMargin < 0) {
+            goToDown();
+            recycler_view.setVisibility(View.INVISIBLE);
             return;
         }
         super.onBackPressed();
@@ -177,14 +168,41 @@ public class LocationActivity extends BaseActivity implements View
         switch (v.getId()) {
             case R.id.iv_search:
             case R.id.et_search:
-                goToTop();
+                goToUp();
+                recycler_view.setVisibility(View.VISIBLE);
                 break;
         }
     }
 
-    private void goToTop() {
-        ll_root.animate().translationY(-ll_top.getHeight());
-        System.out.println("ll_root:" + ll_top.getTranslationY());
-        recycler_view.setVisibility(View.VISIBLE);
+
+    private void goToUp() {
+        final int ll_height = ll_top.getHeight();
+        ValueAnimator animator = ValueAnimator.ofInt(0, -ll_height);
+        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                int height = (int) animation.getAnimatedValue();
+                LinearLayout.LayoutParams lp = (LinearLayout.LayoutParams) ll_top.getLayoutParams();
+                lp.topMargin = height;
+                ll_top.setLayoutParams(lp);
+            }
+        });
+        animator.start();
     }
+
+    private void goToDown() {
+        final int ll_height = ll_top.getHeight();
+        ValueAnimator animator = ValueAnimator.ofInt(-ll_height, 0);
+        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                int height = (int) animation.getAnimatedValue();
+                LinearLayout.LayoutParams lp = (LinearLayout.LayoutParams) ll_top.getLayoutParams();
+                lp.topMargin = height;
+                ll_top.setLayoutParams(lp);
+            }
+        });
+        animator.start();
+    }
+
 }
