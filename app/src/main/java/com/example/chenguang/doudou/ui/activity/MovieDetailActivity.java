@@ -154,6 +154,11 @@ public class MovieDetailActivity extends BaseActivity implements MovieDetailCont
         title_params.setMargins(0, -statusBarHeight, 0, 0);
         ll_title.setLayoutParams(title_params);
 
+        RelativeLayout.LayoutParams sv_params = (RelativeLayout.LayoutParams) scroll_view
+                .getLayoutParams();
+        sv_params.setMargins(0, -statusBarHeight, 0, 0);
+        scroll_view.setLayoutParams(sv_params);
+
     }
 
     private void initListener() {
@@ -329,7 +334,6 @@ public class MovieDetailActivity extends BaseActivity implements MovieDetailCont
     @Override
     public void showBackground(Bitmap bitmap) {
         mTitleBitmap = bitmap;
-        status_bar_bg.setBackgroundDrawable(new BitmapDrawable(bitmap));
         rl_cover.setBackgroundDrawable(new BitmapDrawable(bitmap));
     }
 }

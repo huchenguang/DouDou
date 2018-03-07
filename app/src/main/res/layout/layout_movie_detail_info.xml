@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tool="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              xmlns:tool="http://schemas.android.com/tools"
               android:orientation="vertical">
 
     <RelativeLayout
@@ -10,15 +10,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
-
         <ImageView
             android:id="@+id/iv_cover"
-            tool:src="@mipmap/moon"
             android:layout_width="wrap_content"
-            android:layout_height="204dp"
-            android:layout_centerInParent="true"
-            android:layout_marginBottom="25dp"
-            android:layout_marginTop="75dp"/>
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="75dp"
+            tool:src="@mipmap/moon"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -37,30 +36,30 @@
 
             <TextView
                 android:id="@+id/tv_title"
-                tool:text="明月几时有"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
-                android:textSize="19dp"/>
+                android:textSize="19dp"
+                tool:text="明月几时有"/>
 
             <TextView
                 android:id="@+id/tv_type"
                 style="@style/smallTextStyle"
-                tool:text="2017 / 剧情 / 历史 / 战争"
-                android:layout_marginTop="13dp"/>
+                android:layout_marginTop="13dp"
+                tool:text="2017 / 剧情 / 历史 / 战争"/>
 
             <TextView
                 android:id="@+id/tv_pub_time"
                 style="@style/smallTextStyle"
-                tool:text="上映时间：2017-07-01"
-                android:layout_marginTop="2dp"/>
+                android:layout_marginTop="2dp"
+                tool:text="上映时间：2017-07-01"/>
 
             <TextView
                 android:id="@+id/tv_duration"
                 style="@style/smallTextStyle"
-                tool:text="片长：130分钟"
                 android:layout_marginTop="2dp"
-                android:textSize="12dp"/>
+                android:textSize="12dp"
+                tool:text="片长：130分钟"/>
         </LinearLayout>
 
         <LinearLayout
@@ -84,19 +83,19 @@
             <TextView
                 android:id="@+id/tv_rate"
                 style="@style/smallTextStyle"
-                tool:text="7.0"
                 android:textColor="@color/black"
-                android:textSize="19sp"/>
+                android:textSize="19sp"
+                tool:text="7.0"/>
 
             <RatingBar
                 android:id="@+id/rating_bar"
                 style="@style/starStyle"
-                tool:rating="4.3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:isIndicator="true"
                 android:numStars="5"
-                android:paddingTop="2dp"/>
+                android:paddingTop="2dp"
+                tool:rating="4.3"/>
 
             <TextView
                 android:id="@+id/tv_rating_num"

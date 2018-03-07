@@ -68,7 +68,6 @@ public class LocationActivity extends BaseActivity implements View
         mFragments = new ArrayList<>();
         mFragments.add(DomesticFragment.newInstance());
         mFragments.add(AbroadFragment.newInstance());
-
     }
 
     @Override
