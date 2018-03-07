@@ -17,7 +17,6 @@ import android.widget.RatingBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.blankj.utilcode.util.SizeUtils;
 import com.blankj.utilcode.util.ToastUtils;
 import com.bumptech.glide.Glide;
 import com.chad.library.adapter.base.BaseQuickAdapter;
@@ -158,16 +157,15 @@ public class MovieDetailActivity extends BaseActivity implements MovieDetailCont
     }
 
     private void initListener() {
-        //214为电影信息的layout-title-状态栏的高度
-        final int changedHeight = SizeUtils.dp2px(284);
 
         scroll_view.setOnScrollChangeListener(new NestedScrollView.OnScrollChangeListener() {
             @Override
             public void onScrollChange(NestedScrollView v, int scrollX, int scrollY, int
                     oldScrollX, int oldScrollY) {
-                float scale = (float) v.getScrollY() / changedHeight;
+                float scale = (float) scrollY / (rl_cover.getHeight() - ll_title.getHeight());
+
                 //变化范围0-100 表示从透明到纯色背景
-                int alpha = scale * 100 >= 100 ? 100 : (int) scale * 100;
+                int alpha = scale * 100 >= 100 ? 100 : (int) (scale * 100);
                 if (mTitleBitmap != null) {
                     BitmapDrawable bd = new BitmapDrawable(BitmapUtils.getTransparentBitmap
                             (mTitleBitmap, alpha));
