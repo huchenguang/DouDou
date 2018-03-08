@@ -43,6 +43,7 @@ public class AddressAdapter extends SectioningAdapter {
 
     public void clearAll() {
         this.mData.clear();
+        this.keys.clear();
     }
 
     public HashMap<String, List<String>> getData() {
@@ -107,7 +108,8 @@ public class AddressAdapter extends SectioningAdapter {
     public SectioningAdapter.HeaderViewHolder onCreateHeaderViewHolder(ViewGroup parent, int
             headerUserType) {
         View view;
-        view = LayoutInflater.from(parent.getContext()).inflate(R.layout.header_section_letter, null);
+        view = LayoutInflater.from(parent.getContext()).inflate(R.layout.header_section_letter,
+                null);
         return new MyHeaderViewHolder(view);
     }
 

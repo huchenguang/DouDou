@@ -60,7 +60,7 @@
             android:background="@null"
             android:cursorVisible="true"
             android:hint="输入城市名称查询"
-            android:textColor="@color/light_white"
+            android:textColor="@color/black"
             android:textCursorDrawable="@drawable/drawable_cursor_location"
             android:textSize="15sp"
             />
@@ -77,12 +77,19 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"></android.support.v4.view.ViewPager>
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recycler_view"
+        <FrameLayout
+            android:id="@+id/fl_recycler"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/translucent_dark_gray"
-            android:visibility="invisible"></android.support.v7.widget.RecyclerView>
+            android:clickable="true"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/translucent_dark_gray"></android.support.v7.widget.RecyclerView>
+        </FrameLayout>
 
         <TextView
             android:id="@+id/tv_empty"
@@ -93,7 +100,7 @@
             android:paddingTop="8dp"
             android:text="这里是空哒~"
             android:textSize="16sp"
-            android:visibility="invisible"
+            android:visibility="gone"
             tools:visibility="visible"/>
     </FrameLayout>
 </LinearLayout>

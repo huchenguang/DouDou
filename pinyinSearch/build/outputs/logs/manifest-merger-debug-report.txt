@@ -24,11 +24,11 @@ INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:1:
 		INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml
 		INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml
 uses-sdk
-ADDED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:7:5-9:41
-INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:7:5-9:41
-INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:7:5-9:41
-INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:7:5-9:41
-INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:7:5-9:41
+ADDED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:7:5-9:40
+INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:7:5-9:40
+INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:7:5-9:40
+INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:7:5-9:40
+INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:7:5-9:40
 	android:targetSdkVersion
 		ADDED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml:9:9-38
 		INJECTED from F:\my_projects\DouDou\pinyinSearch\src\main\AndroidManifest.xml

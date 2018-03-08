@@ -61,11 +61,6 @@ public class FindFragment extends BaseFragment {
 //        initViewPager();
     }
 
-    @Override
-    public void setUserVisibleHint(boolean isVisibleToUser) {
-        super.setUserVisibleHint(isVisibleToUser);
-    }
-
     /**
      * 经测试，当加载FindFragment里嵌套的两个fragment时，
      * 第一个fragment(也就是MovieFragment)的setUserVisibleHint的

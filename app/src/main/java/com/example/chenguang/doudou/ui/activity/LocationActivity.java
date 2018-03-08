@@ -8,9 +8,11 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
+import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -44,6 +46,8 @@ public class LocationActivity extends BaseActivity implements View
     EditText et_search;
     @BindView(R.id.view_pager)
     ViewPager view_pager;
+    @BindView(R.id.fl_recycler)
+    FrameLayout fl_recycler;
     @BindView(R.id.recycler_view)
     RecyclerView recycler_view;
     @BindView(R.id.tv_empty)
@@ -125,6 +129,12 @@ public class LocationActivity extends BaseActivity implements View
 
     private void search(CharSequence s) {
         recycler_view.setVisibility(View.VISIBLE);
+
+        if (TextUtils.isEmpty(s)) {
+            mAddressAdapter.clearAll();
+            mAddressAdapter.notifyAllSectionsDataSetChanged();
+            return;
+        }
         List<String> relCitys = new ArrayList<>();
         List<Province> provinces = ((DomesticFragment) mFragments.get(0)).getProvinces();
         if (null != provinces) {
@@ -149,6 +159,8 @@ public class LocationActivity extends BaseActivity implements View
                 mAddressAdapter.notifyAllSectionsDataSetChanged();
             }
         } else {
+            mAddressAdapter.clearAll();
+            mAddressAdapter.notifyAllSectionsDataSetChanged();
             tv_empty.setVisibility(View.VISIBLE);
         }
     }
@@ -157,7 +169,8 @@ public class LocationActivity extends BaseActivity implements View
     public void onBackPressed() {
         if (((LinearLayout.LayoutParams) ll_top.getLayoutParams()).topMargin < 0) {
             goToDown();
-            recycler_view.setVisibility(View.INVISIBLE);
+            fl_recycler.setVisibility(View.GONE);
+            tv_empty.setVisibility(View.GONE);
             return;
         }
         super.onBackPressed();
@@ -169,25 +182,28 @@ public class LocationActivity extends BaseActivity implements View
             case R.id.iv_search:
             case R.id.et_search:
                 goToUp();
-                recycler_view.setVisibility(View.VISIBLE);
+                fl_recycler.setVisibility(View.VISIBLE);
                 break;
         }
     }
 
 
     private void goToUp() {
-        final int ll_height = ll_top.getHeight();
-        ValueAnimator animator = ValueAnimator.ofInt(0, -ll_height);
-        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-            @Override
-            public void onAnimationUpdate(ValueAnimator animation) {
-                int height = (int) animation.getAnimatedValue();
-                LinearLayout.LayoutParams lp = (LinearLayout.LayoutParams) ll_top.getLayoutParams();
-                lp.topMargin = height;
-                ll_top.setLayoutParams(lp);
-            }
-        });
-        animator.start();
+        if (((LinearLayout.LayoutParams) ll_top.getLayoutParams()).topMargin == 0) {
+            final int ll_height = ll_top.getHeight();
+            ValueAnimator animator = ValueAnimator.ofInt(0, -ll_height);
+            animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+                @Override
+                public void onAnimationUpdate(ValueAnimator animation) {
+                    int height = (int) animation.getAnimatedValue();
+                    LinearLayout.LayoutParams lp = (LinearLayout.LayoutParams) ll_top
+                            .getLayoutParams();
+                    lp.topMargin = height;
+                    ll_top.setLayoutParams(lp);
+                }
+            });
+            animator.start();
+        }
     }
 
     private void goToDown() {
