@@ -46,8 +46,11 @@ public class MoviePageAdapter extends PagerAdapter {
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
         //前4個top25o,中间4个口碑，后面4个票房榜
-        List<ItemContentListBean> contentList = item.itemContentList.subList
-                (position, position + 4);
+        List<ItemContentListBean> contentList = null;
+        if (position + 4 <= item.itemContentList.size() - 1) {
+            contentList = item.itemContentList.subList
+                    (position, position + 4);
+        }
 
         View view = View.inflate(mContext, R.layout.pager_movie, null);
         RecyclerView recycler_view = view.findViewById(R.id.recycler_view);

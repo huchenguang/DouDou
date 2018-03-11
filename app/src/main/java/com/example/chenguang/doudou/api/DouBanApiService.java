@@ -16,7 +16,7 @@ import retrofit2.http.Query;
  */
 
 public interface DouBanApiService {
-    @GET("v2/movie/search")
+    @GET("v2/movie/earch")
     Observable<SearchDetail> searchMovie(@Query("q") String key, @Query("start") int
             start, @Query("count") int count);
 

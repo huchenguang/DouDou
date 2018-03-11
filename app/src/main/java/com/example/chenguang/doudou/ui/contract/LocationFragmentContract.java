@@ -15,7 +15,6 @@ public interface LocationFragmentContract extends BaseContract {
 
         void showAllProvinces(List<MySection> mySections);
 
-
     }
 
     interface Presenter<T> extends BasePresenter<T> {

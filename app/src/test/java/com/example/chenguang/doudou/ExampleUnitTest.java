@@ -24,7 +24,7 @@ import static junit.framework.TestCase.assertEquals;
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
-public class ExampleUnitTest{
+public class ExampleUnitTest {
 
     @Test
     public void addition_isCorrect() throws Exception {
@@ -33,11 +33,18 @@ public class ExampleUnitTest{
 
     @Test
     public void test() {
-        String name = "甘";
+        String name = "胡";
         List<PinyinUnit> units = new ArrayList<>();
         PinyinUtil.chineseStringToPinyinUnit(name, units);
-        String fl = PinyinUtil.getFirstLetter(units);
-        System.out.println(fl);
+        /*System.out.println(units.toString());
+//        units.*/
+        String pinyin = PinyinUtil.getSortKey(units);
+        if (pinyin.indexOf(" ") != -1) {
+            pinyin = pinyin.substring(0, pinyin.indexOf(" "));
+        }
+        System.out.println(pinyin);
+        /*String fl = PinyinUtil.getFirstLetter(units);
+        System.out.println(fl);*/
     }
 
     @Test
@@ -101,7 +108,7 @@ public class ExampleUnitTest{
 
     @Test
     public void test4() {
-        String str ="[\n" +
+        String str = "[\n" +
                 "    {\n" +
                 "        \"citys\": [\n" +
                 "            {\n" +
@@ -121,7 +128,8 @@ public class ExampleUnitTest{
                 "]";
         System.out.println(str);
         Gson gson = new Gson();
-        List<Province> provinces = gson.fromJson(str,new TypeToken<List<Province>>(){}.getType());
+        List<Province> provinces = gson.fromJson(str, new TypeToken<List<Province>>() {
+        }.getType());
         System.out.println(provinces.toString());
     }
 

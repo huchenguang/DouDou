@@ -1,9 +1,10 @@
 package com.example.chenguang.doudou;
 
 import com.example.chenguang.doudou.api.DouBanApi;
+import com.example.chenguang.doudou.api.DouBanJsoup;
 import com.example.chenguang.doudou.bean.HotMovie;
+import com.example.chenguang.doudou.bean.ItemContentListBean;
 import com.example.chenguang.doudou.bean.Province;
-import com.example.chenguang.doudou.provider.manager.MovieWillPlayingManager;
 import com.example.chenguang.doudou.utils.ConstantValues;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -47,8 +48,10 @@ public class NetWorkTest {
 //        MovieDetailProvider.getMovieBasicData("26425072");
 //        MovieNowPlayingManager.getNowPlaying("jinhua");
 //        MoviePlayingProvider.getWillPlaying("zhoukou");
-        MovieWillPlayingManager manager = new MovieWillPlayingManager();
-        manager.getWillPlaying("zhoukou");
+        /*MovieWillPlayingManager manager = new MovieWillPlayingManager();
+        manager.getWillPlaying("zhoukou");*/
+        List<ItemContentListBean> praise = DouBanJsoup.getTicketOffice();
+        System.out.println(praise.toString());
     }
 
     @Test

@@ -13,7 +13,6 @@ import android.widget.GridView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.blankj.utilcode.util.ToastUtils;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.example.chenguang.doudou.R;
 import com.example.chenguang.doudou.adapter.HotSearchAdapter;
@@ -92,13 +91,17 @@ public class SearchActivity extends BaseActivity implements SearchContract.View,
 
     @Override
     public void initView() {
-        initHotSearch();
         initSearchView();
 
         initSearchHistory();
 
+        initHotSearch();
+
         tv_cancel.setOnClickListener(this);
         tv_clean.setOnClickListener(this);
+
+        //从后台获取搜索
+        mPresenter.getHotSearch();
     }
 
     private void initHotSearch() {
@@ -111,17 +114,15 @@ public class SearchActivity extends BaseActivity implements SearchContract.View,
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
                 //TODO 点击事件，调到电影详情页
-                ToastUtils.showShort((String) adapter.getData().get(position));
+
             }
         });
-        //从后台获取搜索
-        mPresenter.getHotSearch();
     }
 
     private void initSearchView() {
         //设置hintFontSize
         sv_search.setHintTextSize(14);
-        //设置搜索图标
+        //设置搜索光标
         sv_search.setCursorIcon(R.drawable.drawable_cursor_location);
         sv_search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override

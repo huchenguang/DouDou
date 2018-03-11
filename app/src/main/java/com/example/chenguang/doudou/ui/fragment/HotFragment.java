@@ -103,6 +103,7 @@ public class HotFragment extends BaseFragment implements View.OnClickListener {
         super.onActivityResult(requestCode, resultCode, data);
         if (data != null) {
             String address = data.getStringExtra("address");
+//            PinyinUtil.getSortKey()
             tv_city.setText(address);
         }
     }

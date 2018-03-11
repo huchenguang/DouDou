@@ -60,7 +60,7 @@ public class LocationFragmentPresenter extends RxPresenter<DomesticFragment> imp
                     InputStream in = mView.getContext().getAssets().open("city.txt");
                     ByteArrayOutputStream out = new ByteArrayOutputStream();
                     byte[] bytes = new byte[1024];
-                    int len = 0;
+                    int len;
                     while ((len = in.read(bytes)) != -1) {
                         out.write(bytes, 0, len);
                     }

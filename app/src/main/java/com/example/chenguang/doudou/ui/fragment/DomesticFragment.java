@@ -20,6 +20,8 @@ import com.example.chenguang.doudou.ui.activity.SelectionActivity;
 import com.example.chenguang.doudou.ui.base.BaseFragment;
 import com.example.chenguang.doudou.ui.contract.LocationFragmentContract;
 import com.example.chenguang.doudou.ui.presenter.LocationFragmentPresenter;
+import com.pinyinsearch.model.PinyinUnit;
+import com.pinyinsearch.util.PinyinUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -93,7 +95,15 @@ public class DomesticFragment extends BaseFragment implements LocationFragmentCo
                 }
                 //返回数据给上一个activity
                 Intent intent = new Intent();
+                //处理汉字为拼音
+                List<PinyinUnit> units = new ArrayList<>();
+                PinyinUtil.chineseStringToPinyinUnit(address, units);
+                String pinyin = PinyinUtil.getSortKey(units);
+                if (pinyin.indexOf(" ") != -1) {
+                    pinyin = pinyin.substring(0, pinyin.indexOf(" "));
+                }
                 intent.putExtra("address", address);
+                intent.putExtra("pinyin", pinyin);
                 mActivity.setResult(1, intent);
                 mActivity.finish();
             }

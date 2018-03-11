@@ -4,7 +4,6 @@ import com.example.chenguang.doudou.bean.HotMovie;
 import com.example.chenguang.doudou.bean.InterestMovie;
 import com.example.chenguang.doudou.bean.ItemContentListBean;
 import com.example.chenguang.doudou.bean.SearchDetail;
-import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -15,6 +14,7 @@ import io.reactivex.Observable;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.converter.scalars.ScalarsConverterFactory;
 

@@ -82,7 +82,7 @@ public class DouBanJsoup {
             List<ItemContentListBean> contentList = new ArrayList<>();
             Document document = Jsoup.connect("https://movie.douban.com/cinema/nowplaying/jinhua/")
                     .get();
-            Elements lis = document.select("div.movie_ranking_wrap").select("ul.view_1").select
+            Elements lis = document.select("div#nowplaying").select("ul.lists").select
                     ("li");
             for (int i = 0; i < lis.size(); i++) {
                 if (i > 3) {
@@ -90,30 +90,42 @@ public class DouBanJsoup {
                 }
                 ItemContentListBean content = new ItemContentListBean();
                 Element li = lis.get(i);
-                String id = li.select("h2.movie_ranking_title").select("a").attr("href");
+               /* String id = li.select("h2.movie_ranking_title").select("a").attr("href");
                 id = id.substring(0, id.lastIndexOf("/"));
-                id = id.substring(id.lastIndexOf("/") + 1, id.length());
-                content.id = id;
+                id = id.substring(id.lastIndexOf("/") + 1, id.length());*/
+                content.id = lis.attr("id");
                 //获取封面
-                Elements tempLis = document.select("div#nowplaying").select("ul.lists").select
+                content.cover = lis.select("li.poster").select("img").attr("src");
+                /*Elements tempLis = document.select("div#nowplaying").select("ul.lists").select
                         ("li");
                 try {
                     for (Element tempLi : tempLis) {
                         String tempId = tempLi.attr("id");
-                        if (id.equals(tempId)) {
+                       *//* if (id.equals(tempId)) {
                             content.cover = tempLi.select("li.poster").select("img").attr("src");
                             break;
-                        }
+                        }*//*
                     }
                 } catch (Exception e) {
                     e.printStackTrace();
+                }*/
+                //content.title = li.select("h2.movie_ranking_title").select("a").text();
+                content.title = li.attr("data-title");
+                /*content.rate = Float.parseFloat(li.select("div.text").select("p.star").select
+                        ("span.subject-rate").text());*/
+                try {
+                    content.rate = Float.parseFloat(li.attr("data-score"));
+                } catch (Exception e) {
+                    content.rate = 0f;
                 }
-                content.title = li.select("h2.movie_ranking_title").select("a").text();
-                content.rate = Float.parseFloat(li.select("div.text").select("p.star").select
-                        ("span.subject-rate").text());
-                String rate_nums = li.select("p.star").select("span").get(2).text().trim();
+                /*String rate_nums = li.select("p.star").select("span").get(2).text().trim();
                 content.ratings_count = Long.parseLong(rate_nums.substring(1, rate_nums
-                        .lastIndexOf("人")));
+                        .lastIndexOf("人")));*/
+                try {
+                    content.ratings_count = Long.parseLong(li.attr("data-votecount"));
+                } catch (Exception e) {
+                    content.ratings_count = 0;
+                }
                 contentList.add(content);
             }
             return contentList;
